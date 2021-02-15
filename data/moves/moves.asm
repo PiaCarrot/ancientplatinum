@@ -13,7 +13,8 @@ ENDM
 Moves::
 ; entries correspond to constants/move_constants.asm
 	indirect_table MOVE_LENGTH - 1, 1
-	indirect_entries NUM_ATTACKS, Moves1
+	indirect_entries BEAT_UP, Moves1
+	indirect_entries NUM_ATTACKS, Moves2
 	indirect_table_end
 
 Moves1:
@@ -268,220 +269,221 @@ Moves1:
 	move EFFECT_DEFENSE_DOWN_HIT,   20, FIGHTING, 100, 15,  50 ;ROCK_SMASH
 	move EFFECT_TRAP_TARGET,        15, WATER,     70, 15,   0 ;WHIRLPOOL
 	move EFFECT_BEAT_UP,            10, DARK,     100, 10,   0 ;BEAT_UP
+Moves2:
 ;==========================
 ;	New Moves Start Here
 ;==========================
-	move FAKE_OUT,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move UPROAR,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move STOCKPILE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SPIT_UP,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SWALLOW,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEAT_WAVE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HAIL,         EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TORMENT,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FLATTER,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WILL_O_WISP,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MEMENTO,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FACADE,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FOCUS_PUNCH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SMELLING_SALTS, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move NATURE_POWER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CHARGE,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TAUNT,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TRICK,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROLE_PLAY,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WISH,         EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ASSIST,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move INGRAIN,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SUPERPOWER,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MAGIC_COAT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move RECYCLE,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move REVENGE,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BRICK_BREAK,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move YAWN,         EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move KNOCK_OFF,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ENDEAVOR,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ERUPTION,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SKILL_SWAP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move IMPRISON,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move REFRESH,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GRUDGE,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SNATCH,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SECRET_POWER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DEWATER,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ARM_THRUST,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CAMOUFLAGE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TAIL_GLOW,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LUSTER_PURGE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MIST_BALL,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FEATHER_DANCE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TEETER_DANCE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BLAZE_KICK,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MUD_SPORT,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ICE_BALL,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move NEEDLE_ARM,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SLACK_OFF,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HYPER_VOICE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POISON_FANG,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CRUSH_CLAW,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BLAST_BURN,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HYDRO_CANNON, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move METEOR_MASH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ASTONISH,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WEATHER_BALL, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AROMATHERAPY, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FAKE_TEARS,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AIR_CUTTER,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move OVERHEAT,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ODOR_SLEUTH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROCK_TOMB,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SILVER_WIND,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move METAL_SOUND,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GRASS_WHISTLE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TICKLE,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move COSMIC_POWER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WATER_SPOUT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SIGNAL_BEAM,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHADOW_PUNCH, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move EXTRASENSORY, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SKY_UPPERCUT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SAND_TOMB,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHEER_COLD,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MUDDY_WATER,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BULLET_SEED,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AERIAL_ACE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ICICLE_SPEAR, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move IRON_DEFENSE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BLOCK,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HOWL,         EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRAGON_CLAW,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FRENZY_PLANT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BULK_UP,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BOUNCE,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MUD_SHOT,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POISON_TAIL,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move COVET,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move VOLT_TACKLE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MAGICAL_LEAF, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WATER_SPORT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CALM_MIND,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LEAF_BLADE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRAGON_DANCE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROCK_BLAST,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHOCK_WAVE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WATER_PULSE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DOOM_DESIRE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PSYCHO_BOOST, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROOST,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GRAVITY,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MIRACLE_EYE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WAKE_UP_SLAP, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HAMMER_ARM,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GYRO_BALL,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEALING_WISH, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BRINEWATER,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move NATURAL_GIFT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FEINT,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PLUCK,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TAILWIND,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ACUPRESSURE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move METAL_BURST,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move U_TURN,       EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CLOSE_COMBAT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PAYBACK,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ASSURANCE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move EMBARGO,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FLING,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PSYCHO_SHIFT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TRUMP_CARD,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEAL_BLOCK,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WRING_OUT,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POWER_TRICK,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GASTRO_ACID,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LUCKY_CHANT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ME_FIRST,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move COPYCAT,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POWER_SWAP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GUARD_SWAP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PUNISHMENT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LAST_RESORT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WORRY_SEED,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SUCKER_PUNCH, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TOXIC_SPIKES, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEART_SWAP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AQUA_RING,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MAGNET_RISE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FLARE_BLITZ,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FORCE_PALM,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AURA_SPHERE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROCK_POLISH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POISON_JAB,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DARK_PULSE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move NIGHT_SLASH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AQUA_TAIL,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SEED_BOMB,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AIR_SLASH,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move X_SCISSOR,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BUG_BUZZ,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRAGON_PULSE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRAGON_RUSH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POWER_GEM,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRAIN_PUNCH,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move VACUUM_WAVE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FOCUS_BLAST,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ENERGY_BALL,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BRAVE_BIRD,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move EARTH_POWER,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SWITCHEROO,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GIGA_IMPACT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move NASTY_PLOT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BULLET_PUNCH, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AVALANCHE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ICE_SHARD,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHADOW_CLAW,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move THUNDER_FANG, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ICE_FANG,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FIRE_FANG,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHADOW_SNEAK, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MUD_BOMB,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move PSYCHO_CUT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ZEN_HEADBUTT, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MIRROR_SHOT,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move FLASH_CANNON, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROCK_CLIMB,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DEFOG,        EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move TRICK_ROOM,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DRACO_METEOR, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DISCHARGE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LAVA_PLUME,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LEAF_STORM,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move POWER_WHIP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROCK_WRECKER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CROSS_POISON, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GUNK_SHOT,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move IRON_HEAD,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MAGNET_BOMB,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move STONE_EDGE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CAPTIVATE,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move STEALTH_ROCK, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move GRASS_KNOT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CHATTER,      EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move JUDGMENT,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move BUG_BITE,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CHARGE_BEAM,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move WOOD_HAMMER,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move AQUA_JET,     EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ATTACK_ORDER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DEFEND_ORDER, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEAL_ORDER,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move HEAD_SMASH,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DOUBLE_HIT,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move ROAR_OF_TIME, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SPACIAL_REND, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move LUNAR_DANCE,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move CRUSH_GRIP,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move MAGMA_STORM,  EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move DARK_VOID,    EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SEED_FLARE,   EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move OMINOUS_WIND, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
-	move SHADOW_FORCE, EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;CHATTER
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;JUDGMENT
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;BUG_BITE
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;CHARGE_BEAM
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;WOOD_HAMMER
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;AQUA_JET
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;ATTACK_ORDER
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;DEFEND_ORDER
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;HEAL_ORDER
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;HEAD_SMASH
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;DOUBLE_HIT
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;ROAR_OF_TIME
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;SPACIAL_REND
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;LUNAR_DANCE
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;CRUSH_GRIP
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;MAGMA_STORM
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;DARK_VOID
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;SEED_FLARE
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;OMINOUS_WIND
+	move EFFECT_NORMAL_HIT,         40, NORMAL,   100, 35,   0 ;SHADOW_FORCE

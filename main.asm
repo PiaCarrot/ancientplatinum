@@ -144,10 +144,14 @@ INCLUDE "engine/events/move_deleter.asm"
 INCLUDE "engine/link/mystery_gift_2.asm"
 INCLUDE "engine/items/tmhm.asm"
 INCLUDE "engine/pokemon/print_move_description.asm"
-INCLUDE "data/moves/descriptions.asm"
 INCLUDE "engine/events/pokerus/pokerus.asm"
 INCLUDE "engine/battle/start_battle.asm"
 INCLUDE "engine/gfx/place_graphic.asm"
+
+SECTION "Move Descriptions", ROMX
+
+INCLUDE "data/moves/descriptions.asm"
+
 
 
 SECTION "Effect Commands", ROMX
@@ -255,8 +259,11 @@ INCLUDE "engine/pokemon/experience.asm"
 INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
 INCLUDE "engine/pokemon/move_mon_wo_mail.asm"
-INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "data/pokemon/names.asm"
+
+SECTION "Base Stats", ROMX
+
+INCLUDE "data/pokemon/base_stats.asm"
 
 SECTION "Crystal Phone Text", ROMX
 
@@ -312,8 +319,9 @@ INCLUDE "engine/events/field_moves.asm"
 INCLUDE "engine/events/magnet_train.asm"
 INCLUDE "engine/battle/battlestart_copytilemapatonce.asm"
 INCLUDE "engine/gfx/sprites.asm"
-INCLUDE "engine/gfx/mon_icons.asm"
 
+SECTION "Pokemon Icons", ROMX
+INCLUDE "engine/gfx/mon_icons.asm"
 
 SECTION "bank24", ROMX
 
@@ -409,11 +417,13 @@ INCLUDE "engine/phone/scripts/erin.asm"
 INCLUDE "engine/phone/scripts/generic_callee.asm"
 INCLUDE "engine/events/trainer_scripts.asm"
 
+SECTION "Move Animations Data", ROMX
+INCLUDE "data/moves/animations.asm"
+
 
 SECTION "bank32", ROMX
 
 INCLUDE "engine/battle_anims/bg_effects.asm"
-INCLUDE "data/moves/animations.asm"
 INCLUDE "engine/events/poisonstep_pals.asm"
 
 TheEndGFX::

@@ -17,7 +17,7 @@ SECTION "Evolutions and Attacks Pointers", ROMX
 ; - db 0 ; no more level-up moves
 
 EvosAttacksPointers::
-	indirect_table 4, 1
+	indirect_table 2, 1
 	indirect_entries MEW, EvosAttacksPointers1
 	indirect_entries CELEBI, EvosAttacksPointers2
 	indirect_entries DEOXYS, EvosAttacksPointers3

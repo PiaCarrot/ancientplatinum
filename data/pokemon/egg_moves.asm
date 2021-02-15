@@ -12,7 +12,7 @@ SECTION "Egg Move Pointers", ROMX
 ; and can only breed with Ditto.
 
 EggMovePointers::
-	indirect_table 4, 1
+	indirect_table 2, 1
 	indirect_entries MEW, EggMovePointers1
 	indirect_entries CELEBI, EggMovePointers2
 	indirect_entries DEOXYS, EggMovePointers3
