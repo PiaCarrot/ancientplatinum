@@ -2702,8 +2702,6 @@ wParryFightCount::   db
 wErinFightCount::    db
 ; da0e
 
-	ds 100
-
 wEventFlags:: flag_array NUM_EVENTS ; da72
 ; db6c
 
@@ -2812,7 +2810,6 @@ wSafariTimeRemaining:: dw ; dc7a
 
 wPhoneList:: ds CONTACT_LIST_SIZE ; dc7c
 ; dc86
-	ds 23
 
 wLuckyNumberShowFlag:: db ; dc9d
 	ds 1
@@ -2873,8 +2870,6 @@ wPartyMonOT:: ds NAME_LENGTH * PARTY_LENGTH ; ddff
 
 wPartyMonNicknames:: ds MON_NAME_LENGTH * PARTY_LENGTH ; de41
 wPartyMonNicknamesEnd::
-
-	ds 22
 
 wPokedexCaught:: flag_array NUM_POKEMON ; de99
 wEndPokedexCaught::
