@@ -20,6 +20,7 @@ the engine is finished.
 * PSS Split TODO
 * Erratic and Fluctuating Growth Rates
 * Extended PC Boxes
+* MBC30 Mapper
 
 All of this is to update the hack to be similar to Gen IV in features, while keeping compatibility for trading for the other
 nearly 300 Pokemon not in the regional dex. (E.G Ancient Ruby, and `master` will attempt to build into a 251 Crystal Hack)

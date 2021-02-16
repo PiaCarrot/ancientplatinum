@@ -249,11 +249,6 @@ INCBIN "gfx/footprints/tyranitar.1bpp"
 INCBIN "gfx/footprints/lugia.1bpp"
 INCBIN "gfx/footprints/ho_oh.1bpp"
 INCBIN "gfx/footprints/celebi.1bpp"
-INCBIN "gfx/footprints/252.1bpp"
-INCBIN "gfx/footprints/253.1bpp"
-INCBIN "gfx/footprints/254.1bpp"
-INCBIN "gfx/footprints/255.1bpp"
-INCBIN "gfx/footprints/256.1bpp"
 ;===============================
 ;	Hoenn Footprints Start Here
 ;===============================
@@ -370,6 +365,7 @@ INCBIN "gfx/footprints/hoenn/snorunt.1bpp"
 INCBIN "gfx/footprints/hoenn/glalie.1bpp"
 INCBIN "gfx/footprints/hoenn/spheal.1bpp"
 INCBIN "gfx/footprints/hoenn/sealeo.1bpp"
+;BANK GETS FULL HERE
 INCBIN "gfx/footprints/hoenn/walrein.1bpp"
 INCBIN "gfx/footprints/hoenn/clamperl.1bpp"
 INCBIN "gfx/footprints/hoenn/huntail.1bpp"

@@ -61,6 +61,3 @@ INCBIN "gfx/frames/map_entry_sign.2bpp"
 
 FontsExtra2_UpArrowGFX:
 INCBIN "gfx/font/up_arrow.2bpp"
-
-Footprints:
-INCLUDE "gfx/footprints.asm"

@@ -176,8 +176,11 @@ INCLUDE "data/battle/effect_command_pointers.asm"
 SECTION "bank10", ROMX
 
 INCLUDE "engine/pokedex/pokedex.asm"
-INCLUDE "data/moves/moves.asm"
 INCLUDE "engine/pokemon/evolve.asm"
+
+SECTION "Moves", ROMX
+
+INCLUDE "data/moves/moves.asm"
 
 
 SECTION "bank11", ROMX
@@ -492,10 +495,20 @@ INCBIN "gfx/splash/copyright.2bpp"
 INCLUDE "engine/menus/options_menu.asm"
 INCLUDE "engine/movie/crystal_intro.asm"
 
-
 SECTION "bank3E", ROMX
 
 INCLUDE "engine/gfx/load_font.asm"
+
+SECTION "Footprints", ROMX
+
+Footprints:
+INCLUDE "gfx/footprints.asm"
+
+SECTION "bank3F", ROMX
+
+INCLUDE "engine/tilesets/tileset_anims.asm"
+INCLUDE "engine/events/npc_trade.asm"
+INCLUDE "engine/events/mom_phone.asm"
 INCLUDE "engine/link/time_capsule.asm"
 INCLUDE "engine/events/name_rater.asm"
 INCLUDE "engine/events/play_slow_cry.asm"
@@ -505,14 +518,6 @@ INCLUDE "engine/pokedex/unown_dex.asm"
 INCLUDE "engine/events/magikarp.asm"
 INCLUDE "engine/battle/hidden_power.asm"
 INCLUDE "engine/battle/misc.asm"
-
-
-SECTION "bank3F", ROMX
-
-INCLUDE "engine/tilesets/tileset_anims.asm"
-INCLUDE "engine/events/npc_trade.asm"
-INCLUDE "engine/events/mom_phone.asm"
-
 
 INCLUDE "mobile/mobile_40.asm"
 
