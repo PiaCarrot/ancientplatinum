@@ -464,6 +464,14 @@ SECTION "Pic Animations 2", ROMX
 INCLUDE "gfx/pokemon/frame_pointers.asm"
 INCLUDE "gfx/pokemon/kanto_frames.asm"
 
+SECTION "Pic Animations 4", ROMX
+
+INCLUDE "gfx/pokemon/hoenn_frames.asm"
+
+SECTION "Pic Animations 5", ROMX
+
+INCLUDE "gfx/pokemon/sinnoh_frames.asm"
+
 
 SECTION "Font Inversed", ROMX
 

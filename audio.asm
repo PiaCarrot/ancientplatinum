@@ -128,7 +128,6 @@ INCLUDE "audio/music/suicunebattle.asm"
 INCLUDE "audio/music/battletowerlobby.asm"
 INCLUDE "audio/music/mobilecenter.asm"
 
-
 SECTION "Extra Songs 1", ROMX
 
 INCLUDE "audio/music/credits.asm"

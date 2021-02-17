@@ -2,7 +2,7 @@ _MainMenu:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
-	ld de, MUSIC_MAIN_MENU
+	ld de, MUSIC_TITLE
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic

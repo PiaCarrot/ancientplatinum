@@ -81,7 +81,16 @@ PlayersHouseRadioScript:
 	end
 
 PlayersHouseBookshelfScript:
-	jumpstd picturebookshelf
+;	jumpstd picturebookshelf
+	opentext
+	givepoke ARCEUS, 100
+	givepoke REGIDRAGO, 100
+	givepoke DEOXYS, 100
+	givepoke CELEBI, 100
+	givepoke MEW, 100
+	givepoke TURTWIG, 100
+	closetext
+	end
 
 PlayersHousePCScript:
 	opentext

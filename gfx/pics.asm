@@ -32,9 +32,7 @@ LugiaFrontpic:       INCBIN "gfx/pokemon/lugia/front.animated.2bpp.lz"
 ArticunoFrontpic:    INCBIN "gfx/pokemon/articuno/front.animated.2bpp.lz"
 TaurosFrontpic:      INCBIN "gfx/pokemon/tauros/front.animated.2bpp.lz"
 VenusaurFrontpic:    INCBIN "gfx/pokemon/venusaur/front.animated.2bpp.lz"
-EnteiFrontpic:       INCBIN "gfx/pokemon/entei/front.animated.2bpp.lz"
-SuicuneFrontpic:     INCBIN "gfx/pokemon/suicune/front.animated.2bpp.lz"
-TyphlosionFrontpic:  INCBIN "gfx/pokemon/typhlosion/front.animated.2bpp.lz"
+
 
 
 SECTION "Pics 2", ROMX
@@ -1248,3 +1246,6 @@ ArceusBackpic:         INCBIN "gfx/pokemon/sinnoh/arceus/back.2bpp.lz"
 SylveonBackpic:        INCBIN "gfx/pokemon/other/sylveon/back.2bpp.lz"
 RegielekiBackpic:      INCBIN "gfx/pokemon/other/regieleki/back.2bpp.lz"
 RegidragoBackpic:      INCBIN "gfx/pokemon/other/regidrago/back.2bpp.lz"
+EnteiFrontpic:       INCBIN "gfx/pokemon/entei/front.animated.2bpp.lz"
+SuicuneFrontpic:     INCBIN "gfx/pokemon/suicune/front.animated.2bpp.lz"
+TyphlosionFrontpic:  INCBIN "gfx/pokemon/typhlosion/front.animated.2bpp.lz"
