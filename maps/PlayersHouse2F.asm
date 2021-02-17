@@ -89,8 +89,8 @@ PlayersHouseBookshelfScript:
 	givepoke CELEBI, 100
 	givepoke MEW, 100
 	givepoke TURTWIG, 100
+	callasm CheatFillPokedex
 	closetext
-	end
 
 PlayersHousePCScript:
 	opentext
@@ -141,3 +141,18 @@ PlayersHouse2F_MapEvents:
 	object_event  4,  4, SPRITE_DOLL_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Doll1Script, EVENT_PLAYERS_HOUSE_2F_DOLL_1
 	object_event  5,  4, SPRITE_DOLL_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Doll2Script, EVENT_PLAYERS_HOUSE_2F_DOLL_2
 	object_event  0,  1, SPRITE_BIG_DOLL, SPRITEMOVEDATA_BIGDOLL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BigDollScript, EVENT_PLAYERS_HOUSE_2F_BIG_DOLL
+
+CheatFillPokedex:
+	ld a, 1
+	ld [wFirstUnownSeen], a
+	ld hl, wPokedexSeen
+	call .Fill
+	ld hl, wPokedexCaught
+.Fill:
+	ld a, %11111111
+	ld bc, 62 ; 001-248
+	call ByteFill
+;	ld a, %11111111
+;	ld bc, 31 ; 249-496
+	ret
+	end
