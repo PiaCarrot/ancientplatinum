@@ -30,7 +30,6 @@
 	const FIRE_STONE   ; 16
 	const THUNDERSTONE ; 17
 	const WATER_STONE  ; 18
-	const ITEM_19      ; 19
 	const HP_UP        ; 1a
 	const PROTEIN      ; 1b
 	const IRON         ; 1c
@@ -50,12 +49,10 @@
 	const SUPER_REPEL  ; 2a
 	const MAX_REPEL    ; 2b
 	const DIRE_HIT     ; 2c
-	const ITEM_2D      ; 2d
 	const FRESH_WATER  ; 2e
 	const SODA_POP     ; 2f
 	const LEMONADE     ; 30
 	const X_ATTACK     ; 31
-	const ITEM_32      ; 32
 	const X_DEFEND     ; 33
 	const X_SPEED      ; 34
 	const X_SPECIAL    ; 35
@@ -65,7 +62,6 @@
 	const EXP_SHARE    ; 39
 	const OLD_ROD      ; 3a
 	const GOOD_ROD     ; 3b
-	const SILVER_LEAF  ; 3c
 	const SUPER_ROD    ; 3d
 	const PP_UP        ; 3e
 	const ETHER        ; 3f
@@ -80,7 +76,6 @@
 	const MOOMOO_MILK  ; 48
 	const QUICK_CLAW   ; 49
 	const PSNCUREBERRY ; 4a
-	const GOLD_LEAF    ; 4b
 	const SOFT_SAND    ; 4c
 	const SHARP_BEAK   ; 4d
 	const PRZCUREBERRY ; 4e
@@ -95,7 +90,6 @@
 	const BIG_MUSHROOM ; 57
 	const SILVERPOWDER ; 58
 	const BLU_APRICORN ; 59
-	const ITEM_5A      ; 5a
 	const AMULET_COIN  ; 5b
 	const YLW_APRICORN ; 5c
 	const GRN_APRICORN ; 5d
@@ -105,7 +99,6 @@
 	const WHT_APRICORN ; 61
 	const BLACKBELT    ; 62
 	const BLK_APRICORN ; 63
-	const ITEM_64      ; 64
 	const PNK_APRICORN ; 65
 	const BLACKGLASSES ; 66
 	const SLOWPOKETAIL ; 67
@@ -125,7 +118,6 @@
 	const MIRACLE_SEED ; 75
 	const THICK_CLUB   ; 76
 	const FOCUS_BAND   ; 77
-	const ITEM_78      ; 78
 	const ENERGYPOWDER ; 79
 	const ENERGY_ROOT  ; 7a
 	const HEAL_POWDER  ; 7b
@@ -140,34 +132,21 @@
 	const STAR_PIECE   ; 84
 	const BASEMENT_KEY ; 85
 	const PASS         ; 86
-	const ITEM_87      ; 87
-	const ITEM_88      ; 88
-	const ITEM_89      ; 89
 	const CHARCOAL     ; 8a
 	const BERRY_JUICE  ; 8b
 	const SCOPE_LENS   ; 8c
-	const ITEM_8D      ; 8d
-	const ITEM_8E      ; 8e
 	const METAL_COAT   ; 8f
 	const DRAGON_FANG  ; 90
-	const ITEM_91      ; 91
 	const LEFTOVERS    ; 92
-	const ITEM_93      ; 93
-	const ITEM_94      ; 94
-	const ITEM_95      ; 95
 	const MYSTERYBERRY ; 96
 	const DRAGON_SCALE ; 97
 	const BERSERK_GENE ; 98
-	const ITEM_99      ; 99
-	const ITEM_9A      ; 9a
-	const ITEM_9B      ; 9b
 	const SACRED_ASH   ; 9c
 	const HEAVY_BALL   ; 9d
 	const FLOWER_MAIL  ; 9e
 	const LEVEL_BALL   ; 9f
 	const LURE_BALL    ; a0
 	const FAST_BALL    ; a1
-	const ITEM_A2      ; a2
 	const LIGHT_BALL   ; a3
 	const FRIEND_BALL  ; a4
 	const MOON_BALL    ; a5
@@ -176,16 +155,12 @@
 	const GORGEOUS_BOX ; a8
 	const SUN_STONE    ; a9
 	const POLKADOT_BOW ; aa
-	const ITEM_AB      ; ab
 	const UP_GRADE     ; ac
 	const BERRY        ; ad
 	const GOLD_BERRY   ; ae
 	const SQUIRTBOTTLE ; af
-	const ITEM_B0      ; b0
 	const PARK_BALL    ; b1
 	const RAINBOW_WING ; b2
-	const ITEM_B3      ; b3
-	const BRICK_PIECE  ; b4
 	const SURF_MAIL    ; b5
 	const LITEBLUEMAIL ; b6
 	const PORTRAITMAIL ; b7
@@ -195,10 +170,6 @@
 	const BLUESKY_MAIL ; bb
 	const MUSIC_MAIL   ; bc
 	const MIRAGE_MAIL  ; bd
-	const ITEM_BE      ; be
-	const ITEM_DC      ; bf
-	const ITEM_C3      ; c0
-	const ITEM_FA      ; c1
 
 add_tm: MACRO
 if !DEF(TM01)
@@ -261,6 +232,98 @@ ENDM
 	add_tm FIRE_PUNCH   ; f1
 	add_tm FURY_CUTTER  ; f2
 	add_tm NIGHTMARE    ; f3
+	; add_tm FOCUS_PUNCH
+	; add_tm DRAGON_CLAW
+	; add_tm WATER_PULSE
+	; add_tm CALM_MIND
+	; add_tm ROAR
+	; add_tm TOXIC
+	; add_tm HAIL
+	; add_tm BULK_UP
+	; add_tm BULLET_SEED
+	; add_tm HIDDEN_POWER
+	; add_tm SUNNY_DAY
+	; add_tm TAUNT
+	; add_tm ICE_BEAM
+	; add_tm BLIZZARD
+	; add_tm HYPER_BEAM
+	; add_tm LIGHT_SCREEN
+	; add_tm PROTECT
+	; add_tm RAIN_DANCE
+	; add_tm GIGA_DRAIN
+	; add_tm SAFEGUARD
+	; add_tm FRUSTRATION
+	; add_tm SOLARBEAM
+	; add_tm IRON_TAIL
+	; add_tm THUNDERBOLT
+	; add_tm THUNDER
+	; add_tm EARTHQUAKE
+	; add_tm RETURN
+	; add_tm DIG
+	; add_tm PSYCHIC_M
+	; add_tm SHADOW_BALL
+	; add_tm BRICK_BREAK
+	; add_tm DOUBLE_TEAM
+	; add_tm REFLECT
+	; add_tm SHOCK_WAVE
+	; add_tm FLAMETHROWER
+	; add_tm SLUDGE_BOMB
+	; add_tm SANDSTORM
+	; add_tm FIRE_BLAST
+	; add_tm ROCK_TOMB
+	; add_tm AERIAL_ACE
+	; add_tm TORMENT
+	; add_tm FACADE
+	; add_tm SECRET_POWER
+	; add_tm REST
+	; add_tm ATTRACT
+	; add_tm THIEF
+	; add_tm STEEL_WING
+	; add_tm SKILL_SWAP
+	; add_tm SNATCH
+	; add_tm OVERHEAT
+	; add_tm ROOST
+	; add_tm FOCUS_BLAST
+	; add_tm ENERGY_BALL
+	; add_tm FALSE_SWIPE
+	; add_tm BRINE
+	; add_tm FLING
+	; add_tm CHARGE_BEAM
+	; add_tm ENDURE
+	; add_tm DRAGON_PULSE
+	; add_tm DRAIN_PUNCH
+	; add_tm WILL_O_WISP
+	; add_tm SILVER_WIND
+	; add_tm EMBARGO
+	; add_tm EXPLOSION
+	; add_tm SHADOW_CLAW
+	; add_tm PAYBACK
+	; add_tm RECYCLE
+	; add_tm GIGA_IMPACT
+	; add_tm ROCK_POLISH
+	; add_tm FLASH
+	; add_tm STONE_EDGE
+	; add_tm AVALANCHE
+	; add_tm THUNDER_WAVE
+	; add_tm GYRO_BALL
+	; add_tm SWORDS_DANCE
+	; add_tm STEALTH_ROCK
+	; add_tm PSYCH_UP
+	; add_tm CAPTIVATE
+	; add_tm DARK_PULSE
+	; add_tm ROCK_SLIDE
+	; add_tm X_SCISSOR
+	; add_tm SLEEP_TALK
+	; add_tm NATURAL_GIFT
+	; add_tm POISON_JAB
+	; add_tm DREAM_EATER
+	; add_tm GRASS_KNOT
+	; add_tm SWAGGER
+	; add_tm PLUCK
+	; add_tm U_TURN
+	; add_tm SUBSTITUTE
+	; add_tm FLASH_CANNON
+	; add_tm TRICK_ROOM
 NUM_TMS EQU const_value - TM01
 
 add_hm: MACRO
@@ -279,12 +342,59 @@ ENDM
 	add_hm FLASH        ; f8
 	add_hm WHIRLPOOL    ; f9
 	add_hm WATERFALL    ; fa
+	; add_hm CUT          ; f4
+	; add_hm FLY          ; f5
+	; add_hm SURF         ; f6
+	; add_hm STRENGTH     ; f7
+	; add_hm DEFOG
+	; add_hm ROCK_SMASH        ; f8
+	; add_hm WATERFALL    ; f9
+	; add_hm ROCK_CLIMB    ; fa
 NUM_HMS EQU const_value - HM01
 
 add_mt: MACRO
 	enum \1_TMNUM
 ENDM
-
+;Route 212                 ; Cost in Shards
+	; add_mt AIR_CUTTER      ; 4 Blue 2 Red 2 Green
+	; add_mt DIVE            ; 4 Blue 2 Red 2 Yellow
+	; add_mt FIRE_PUNCH      ; 6 Blue 2 Red
+	; add_mt FURY_CUTTER     ; 8 Blue
+	; add_mt ICE_PUNCH       ; 6 Blue 2 Red
+	; add_mt ICY_WIND        ; 6 Blue 2 Green
+	; add_mt KNOCK_OFF       ; 4 Blue 4 Red
+	; add_mt OMINOUS_WIND    ; 6 Blue 2 Green
+	; add_mt SUCKER_PUNCH    ; 6 Blue 2 Yellow
+	; add_mt TRICK           ; 4 Blue 4 Yellow
+	; add_mt THUNDERPUNCH    ; 6 Blue 2 Red
+	; add_mt VACUUM_WAVE     ; 4 Blue 2 Red 2 Green
+	; add_mt ZEN_HEADBUTT    ; 4 Blue 4 Yellow
+;Snowpoint City
+	; add_mt LAST_RESORT     ; 8 Green
+	; add_mt MAGNET_RISE     ; 2 Blue 4 Yellow 2 Green
+	; add_mt SNORE           ; 2 Red 4 Yellow 2 Green
+	; add_mt SPITE           ; 8 Yellow
+	; add_mt SWIFT           ; 2 Red 2 Yellow 4 Green
+	; add_mt SYNTHESIS       ; 2 Yellow 6 Green
+	; add_mt UPROAR          ; 6 Yellow 2 Green
+;Survival Area
+	; add_mt ANCIENTPOWER    ; 6 Red 2 Green
+	; add_mt AQUA_TAIL       ; 6 Red 2 Green
+	; add_mt BOUNCE          ; 4 Red 2 Yellow 2 Green
+	; add_mt EARTH_POWER     ; 6 Red 2 Green
+	; add_mt ENDEAVOR        ; 4 Red 4 Yellow
+	; add_mt GASTRO_ACID     ; 4 Red 2 Yellow 2 Green
+	; add_mt GUNK_SHOT       ; 2 Blue 4 Red 2 Green
+	; add_mt HEAT_WAVE       ; 2 Blue 4 Red 2 Green
+	; add_mt IRON_DEFENSE    ; 2 Blue 4 Red 2 Yellow
+	; add_mt IRON_HEAD       ; 6 Red 2 Yellow
+	; add_mt MUD_SLAP        ; 4 Blue 4 Red
+	; add_mt OUTRAGE         ; 6 Red 2 Yellow
+	; add_mt ROLLOUT         ; 2 Blue 4 Red 2 Green
+	; add_mt SEED_BOMB       ; 4 Red 4 Green
+	; add_mt SIGNAL_BEAM     ; 2 Blue 2 Red 2 Yellow 2 Green
+	; add_mt SUPERPOWER      ; 8 Red
+	; add_mt TWISTER         ; 6 Red 2 Green
 	add_mt FLAMETHROWER
 	add_mt THUNDERBOLT
 	add_mt ICE_BEAM
@@ -292,8 +402,3 @@ NUM_TM_HM_TUTOR EQU __enum__ + -1
 
 USE_SCRIPT_VAR EQU $00
 ITEM_FROM_MEM  EQU $ff
-
-; leftovers from red
-SAFARI_BALL    EQU $08 ; MOON_STONE
-MOON_STONE_RED EQU $0a ; BURN_HEAL
-FULL_HEAL_RED  EQU $34 ; X_SPEED

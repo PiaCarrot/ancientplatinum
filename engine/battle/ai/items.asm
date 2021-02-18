@@ -714,7 +714,7 @@ TextJump_EnemyWithdrew:
 Function384d5: ; This appears to be unused
 	call AIUsedItemSound
 	call AI_HealStatus
-	ld a, FULL_HEAL_RED ; X_SPEED
+	ld a, X_SPEED ; X_SPEED
 	jp PrintText_UsedItemOn_AND_AIUpdateHUD
 
 AI_HealStatus:

@@ -25,4 +25,12 @@ IsHMMove::
 	dw FLASH
 	dw WATERFALL
 	dw WHIRLPOOL
+	; dw CUT
+	; dw FLY
+	; dw SURF
+	; dw STRENGTH
+	; dw DEFOG
+	; dw ROCK_SMASH
+	; dw WATERFALL
+	; dw ROCK_CLIMB
 	dw -1 ; end
