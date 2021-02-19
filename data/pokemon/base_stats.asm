@@ -38,7 +38,9 @@ BaseData::
 		assert $20 == BASE_DATA_SIZE, "Please adjust the table size (and this assertion) to match BASE_DATA_SIZE"
 	endc
 	indirect_table $20, 1
-	indirect_entries NUM_POKEMON, BaseData1
+	indirect_entries CELEBI, BaseData1
+	indirect_entries DEOXYS, BaseData2
+	indirect_entries NUM_POKEMON, BaseData3
 	indirect_table_end
 
 BaseData1:
@@ -293,6 +295,7 @@ INCLUDE "data/pokemon/base_stats/tyranitar.asm"
 INCLUDE "data/pokemon/base_stats/lugia.asm"
 INCLUDE "data/pokemon/base_stats/ho_oh.asm"
 INCLUDE "data/pokemon/base_stats/celebi.asm"
+BaseData2:
 ;HOENN
 INCLUDE "data/pokemon/base_stats/hoenn/treecko.asm"
 INCLUDE "data/pokemon/base_stats/hoenn/grovyle.asm"
@@ -429,6 +432,7 @@ INCLUDE "data/pokemon/base_stats/hoenn/groudon.asm"
 INCLUDE "data/pokemon/base_stats/hoenn/rayquaza.asm"
 INCLUDE "data/pokemon/base_stats/hoenn/jirachi.asm"
 INCLUDE "data/pokemon/base_stats/hoenn/deoxys.asm"
+BaseData3:
 ;SINNOH
 INCLUDE "data/pokemon/base_stats/sinnoh/turtwig.asm"
 INCLUDE "data/pokemon/base_stats/sinnoh/grotle.asm"

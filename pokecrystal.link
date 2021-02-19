@@ -312,6 +312,16 @@ ROMX $7e
 ROMX $7f
 	org $7de0
 	"Mobile Stadium 2"
+ROMX $80
+	"Base Stats"
+ROMX $81
+	"Pic Animations 4"
+ROMX $82
+	"Pic Animations 5"
+ROMX $83
+	"Pic Animations 6"
+ROMX $84
+	"Pic Animations 7"
 WRAM0
 	"Stack"
 	"Audio RAM"
