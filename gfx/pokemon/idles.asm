@@ -249,10 +249,6 @@ TyranitarAnimationIdle:  INCLUDE "gfx/pokemon/tyranitar/anim_idle.asm"
 LugiaAnimationIdle:      INCLUDE "gfx/pokemon/lugia/anim_idle.asm"
 HoOhAnimationIdle:       INCLUDE "gfx/pokemon/ho_oh/anim_idle.asm"
 CelebiAnimationIdle:     INCLUDE "gfx/pokemon/celebi/anim_idle.asm"
-EggAnimationIdle:        INCLUDE "gfx/pokemon/egg/anim_idle.asm"
-
-SECTION "New Pokemon Idles", ROMX
-
 TreeckoAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/treecko/anim_idle.asm"
 GrovyleAnimationIdle:       INCLUDE "gfx/pokemon/hoenn/grovyle/anim_idle.asm"
 SceptileAnimationIdle:      INCLUDE "gfx/pokemon/hoenn/sceptile/anim_idle.asm"
@@ -498,3 +494,4 @@ ArceusAnimationIdle:        INCLUDE "gfx/pokemon/sinnoh/arceus/anim_idle.asm"
 SylveonAnimationIdle:       INCLUDE "gfx/pokemon/other/sylveon/anim_idle.asm"
 RegielekiAnimationIdle:     INCLUDE "gfx/pokemon/other/regieleki/anim_idle.asm"
 RegidragoAnimationIdle:     INCLUDE "gfx/pokemon/other/regidrago/anim_idle.asm"
+EggAnimationIdle:        INCLUDE "gfx/pokemon/egg/anim_idle.asm"

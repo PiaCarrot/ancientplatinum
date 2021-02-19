@@ -249,10 +249,6 @@ TyranitarBitmasks:  INCLUDE "gfx/pokemon/tyranitar/bitmask.asm"
 LugiaBitmasks:      INCLUDE "gfx/pokemon/lugia/bitmask.asm"
 HoOhBitmasks:       INCLUDE "gfx/pokemon/ho_oh/bitmask.asm"
 CelebiBitmasks:     INCLUDE "gfx/pokemon/celebi/bitmask.asm"
-EggBitmasks:        INCLUDE "gfx/pokemon/egg/bitmask.asm"
-
-SECTION "New Pokemon Bitmasks", ROMX
-
 TreeckoBitmasks:       INCLUDE "gfx/pokemon/hoenn/treecko/bitmask.asm"
 GrovyleBitmasks:       INCLUDE "gfx/pokemon/hoenn/grovyle/bitmask.asm"
 SceptileBitmasks:      INCLUDE "gfx/pokemon/hoenn/sceptile/bitmask.asm"
@@ -498,3 +494,4 @@ ArceusBitmasks:        INCLUDE "gfx/pokemon/sinnoh/arceus/bitmask.asm"
 SylveonBitmasks:       INCLUDE "gfx/pokemon/other/sylveon/bitmask.asm"
 RegielekiBitmasks:     INCLUDE "gfx/pokemon/other/regieleki/bitmask.asm"
 RegidragoBitmasks:     INCLUDE "gfx/pokemon/other/regidrago/bitmask.asm"
+EggBitmasks:        INCLUDE "gfx/pokemon/egg/bitmask.asm"

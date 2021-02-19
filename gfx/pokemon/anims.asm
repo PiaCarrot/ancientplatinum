@@ -249,10 +249,6 @@ TyranitarAnimation:  INCLUDE "gfx/pokemon/tyranitar/anim.asm"
 LugiaAnimation:      INCLUDE "gfx/pokemon/lugia/anim.asm"
 HoOhAnimation:       INCLUDE "gfx/pokemon/ho_oh/anim.asm"
 CelebiAnimation:     INCLUDE "gfx/pokemon/celebi/anim.asm"
-EggAnimation:        INCLUDE "gfx/pokemon/egg/anim.asm"
-
-SECTION "New Pic Animations", ROMX
-
 TreeckoAnimation:       INCLUDE "gfx/pokemon/hoenn/treecko/anim.asm"
 GrovyleAnimation:       INCLUDE "gfx/pokemon/hoenn/grovyle/anim.asm"
 SceptileAnimation:      INCLUDE "gfx/pokemon/hoenn/sceptile/anim.asm"
@@ -498,3 +494,4 @@ ArceusAnimation:        INCLUDE "gfx/pokemon/sinnoh/arceus/anim.asm"
 SylveonAnimation:       INCLUDE "gfx/pokemon/other/sylveon/anim.asm"
 RegielekiAnimation:     INCLUDE "gfx/pokemon/other/regieleki/anim.asm"
 RegidragoAnimation:     INCLUDE "gfx/pokemon/other/regidrago/anim.asm"
+EggAnimation:        INCLUDE "gfx/pokemon/egg/anim.asm"
